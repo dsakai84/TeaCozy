@@ -1,5 +1,5 @@
 body {
-  display: flex;
+  display: inline-flex;
   font-family: Helvetica;
   font-size: 22px;
   color: Seashell;
@@ -14,11 +14,13 @@ header {
   display: flex;
   align-items: center;
   position: fixed;
+  top: 0;
   z-index: 1;
   width: 100%;
   height: 69px;
   border-bottom: 1px solid seashell;
   background-color: black;
+
 }
 
 .logo {
@@ -39,16 +41,21 @@ nav span {
   padding-right: 10px;
 }
 
+a {
+  color: seashell;
+}
+
 .main {
 }
 /* mission statement */
 
 .mission {
-  display: flex;
+  display: inline-flex;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   width: 1200px;
   height: 700px;
   align-items: center;
+  justify-content: center;
 }
 
 .mission-text {
@@ -78,31 +85,36 @@ img {
 /* locations */
 
 .locations {
-  display: inline-flex;
+  display: inline-block;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
   width: 1200px;
   height: 500px;
   margin-top: 50px;
   justify-content: center;
   align-items: center;
+
 }
 
 .title h2 {
-  display: flex;
-  padding: 10px;
-  background-color: blue;
-  align-items: center;
+  display: block;
+  width: 100%;
 }
 
 .boxes {
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 300px;
   height: 275px;
   background-color: black;
   opacity: 1;
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 15px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .contact {
